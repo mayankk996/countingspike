@@ -1,5 +1,5 @@
 const discord = require(`discord.js`);
-const client = new discord.Client();
+const client = new Discord.Client();
 const db = require(`./db.json`);
 const fs = require(`fs`)
 require('dotenv/config');
@@ -38,7 +38,7 @@ client.on("message", message => {
 })
 
 bot.on('error', err => {
-    console.log(err);
+    console.log(err)
 });
 
 client.login(token);
