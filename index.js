@@ -37,7 +37,7 @@ client.on("message", message => {
 }
 })
 
-bot.on('error', err => {
+client.on('error', err => {
     console.log(err)
 });
 
